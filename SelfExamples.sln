@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfExamples", "SelfExample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SELNUnitExamples", "SELNUnitExamples\SELNUnitExamples.csproj", "{424AADAD-B076-4824-9861-0742CF97C5A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment", "Assignment\Assignment.csproj", "{CA571264-E4E7-48F5-8CFB-7F7155E383FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{424AADAD-B076-4824-9861-0742CF97C5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{424AADAD-B076-4824-9861-0742CF97C5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{424AADAD-B076-4824-9861-0742CF97C5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
