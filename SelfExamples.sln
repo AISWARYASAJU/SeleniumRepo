@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SELNUnitExamples", "SELNUni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment", "Assignment\Assignment.csproj", "{CA571264-E4E7-48F5-8CFB-7F7155E383FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssiNuint", "AssiNuint\AssiNuint.csproj", "{F2FF53D3-A06B-453A-8A5A-7ADD291F450E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "workout", "workout\workout.csproj", "{0C8E60B6-0FB9-4B5C-85F6-C38129C4D41B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA571264-E4E7-48F5-8CFB-7F7155E383FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2FF53D3-A06B-453A-8A5A-7ADD291F450E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2FF53D3-A06B-453A-8A5A-7ADD291F450E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2FF53D3-A06B-453A-8A5A-7ADD291F450E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2FF53D3-A06B-453A-8A5A-7ADD291F450E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8E60B6-0FB9-4B5C-85F6-C38129C4D41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8E60B6-0FB9-4B5C-85F6-C38129C4D41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8E60B6-0FB9-4B5C-85F6-C38129C4D41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8E60B6-0FB9-4B5C-85F6-C38129C4D41B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

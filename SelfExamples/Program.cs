@@ -4,60 +4,51 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SelfExamples;
 
-//GHTests gHTests = new GHTests();
+GHTests gHTests = new();
+
+/*
+Console.WriteLine("1.Edge 2.Chrome");
+int ch=Convert.ToInt32(Console.ReadLine());
+switch (ch)
+{
+    case 1:
+        gHTests.InitializeEdgeDriver();break;
+    case 2:
+        gHTests.InitializeChromeDriver();break;
+}
+*/
 List<string> drivers = new List<string>();
-//drivers.Add("Edge");
 drivers.Add("Chrome");
+//drivers.Add("Edge");
 
 foreach (var d in drivers)
 {
-    AmazonTests az = new AmazonTests();
     switch (d)
     {
-
-        case "Edge":
-            az.InitializeEdgeDriver(); break;
         case "Chrome":
-            az.InitializeChromeDriver(); break;
+            gHTests.InitializeChromeDriver();
+            Thread.Sleep(3000);
+            break;
+        //case "Edge":
+            //gHTests.InitializeEdgeDriver(); break;
+
     }
-
-
-    //            console.writeline("1.edge 2.chrome");
-    //            int ch = convert.toint32(console.readline());
-    //            switch (ch)
-    //            {
-    //                case 1:
-    //                    ghtests.initializeedgedriver(); break;
-    //                case 2:
-    //                    ghtests.initializechromedriver(); break;
-    ////            }*/
     try
     {
+         gHTests.TitleTest();
+         gHTests.PageSourceandURLTest();
+         gHTests.GoogleSearchTest();
+         gHTests.GmailLinkTest();
+         gHTests.ImagesLinkTest();
+         gHTests.LocalizationTest(); 
+        //gHTests.GAppYoutube();
 
-        //az.TitleTest();
-        //az.LogoClickTest();
-        //Thread.Sleep(2000);
-        //az.SearchProductTest();
-        //Thread.Sleep(2000);
-        //az.ReloadHomePage();
-        //az.TodaysDealsTes();
-        //az.SignInAccListTest();
-        //az.SearchAndFilterProductByBrandTest();
-        az.SortBySelectTest();
 
     }
-
     catch (AssertionException)
     {
         Console.WriteLine("Fail");
     }
-    catch(NoSuchElementException nse)
-    {
-        Console.WriteLine(nse.Message);
-    }
-
-
-
-
-    az.Destruct();
+    gHTests.Destruct();
 }
+
