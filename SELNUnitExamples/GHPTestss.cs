@@ -20,19 +20,30 @@ namespace SELNUnitExamples
             Assert.AreEqual("Google", driver.Title);
             Console.WriteLine("Title test - Pass");
         }
-        [Ignore("others")]
+        //  [Ignore("others")]
         [Test]
         [Order(20)]
         public void GoogleSearchTest()
         {
-            IWebElement searchInputBox = driver.FindElement(By.Id("APjFqb"));
-            searchInputBox.SendKeys("hp laptops"); //to type inside the text box
-            Thread.Sleep(5000);
-            IWebElement googleSearchButton = driver.FindElement(By.ClassName("gNO89b"));
-            //Name("btnK"));
-            googleSearchButton.Click();
-            Assert.AreEqual("hp laptops - Google Search", driver.Title);
-            Console.WriteLine("GoogleSearchTest - Pass");
+            string? currDir = Directory.GetParent(@"../../../")?.FullName;
+            string? excelFilePath = currDir + "\\InputData.xlsx";
+            Console.Write(excelFilePath);
+            List<ExcelData> excelDataList = ExcelUtils.ReadExcelData(excelFilePath);
+
+            foreach ( var excelData  in excelDataList)
+            {
+                Console.WriteLine($"Text : {excelData.SearchText}");
+
+
+                IWebElement searchInputBox = driver.FindElement(By.Id("APjFqb"));
+                searchInputBox.SendKeys("hp laptops"); //to type inside the text box
+                Thread.Sleep(5000);
+                IWebElement googleSearchButton = driver.FindElement(By.ClassName("gNO89b"));
+                //Name("btnK"));
+                googleSearchButton.Click();
+                Assert.AreEqual("hp laptops - Google Search", driver.Title);
+                Console.WriteLine("GoogleSearchTest - Pass");
+            }
         }
         [Ignore("others")]
         [Test]

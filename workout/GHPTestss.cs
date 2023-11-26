@@ -11,7 +11,7 @@ namespace workout
     [TestFixture] //contain more than 1 test inside
     internal class GHPTestss : CoreCodes
     {
-        // [Ignore("others")]
+        [Ignore("others")]
         [Test]
         [Order(10)]
         public void TitleTest()
@@ -25,7 +25,7 @@ namespace workout
             Console.WriteLine("Title test - Pass");
         }
 
-        // [Ignore("others")]
+        [Ignore("others")]
         [Test]
         [Order(20)]
         public void GoogleSearchTest()
