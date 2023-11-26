@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NaptolAssignment522112023.TestScripts: Corecodes
+namespace NaptolAssignment522112023.TestScripts
 {
-    internal class ProductSearchTest
+    internal class ProductSearchTest: Corecodes
     {
         [Test, Order(1)]
         public void SearchTest()
